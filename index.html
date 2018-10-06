@@ -1,51 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Resume</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <title>Resume</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="main-header">
-        <nav class="main-navigation">
-            <div class="main-navigation-wrapper">
-                <div class="container">
-                    <ul class="resume-navigation">
-                        <li>
-                            <a class="main-logo">
-                                <img src="css/resume.jpg" width="300" height="150" alt="Resume's logotype">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#name">Name</a>
-                        </li>
-                        <li>
-                            <a href="#contacts">Contacts</a>
-                        </li>
-                        <li>
-                            <a href="#summary">Summary</a>
-                        </li>
-                        <li>
-                            <a href="#skills">Skills</a>
-                        </li>
-                        <li>
-                            <a href="#code-example">Code example</a>
-                        </li>
-                        <li>
-                            <a href="#experience">Experience</a>
-                        </li>
-                        <li>
-                            <a href="#education">Education</a>
-                        </li>
-                        <li>
-                            <a href="#english">English level</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <div class="main-navigation-wrapper">
+        <div class="container">
+          <ul class="resume-navigation">
+            <li>
+              <a class="main-logo">
+                <img src="img/resume.jpg" width="300" height="150" alt="Resume's logotype">
+              </a>
+            </li>
+            <li>
+              <a href="#personal">Personal information</a>
+            </li>
+            <li>
+              <a href="#contacts">Contacts</a>
+            </li>
+            <li>
+              <a href="#summary">Summary</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#code-example">Code example</a>
+            </li>
+            <li>
+              <a href="#education">Education</a>
+            </li>
+            <li>
+              <a href="#english">English level</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+      <h1 class="visually-hidden">Resume Page</h1>
+
+    <section class="personal" id="personal">
+      <h2>Personal information</h2>
+      <ul class="personal-information-list">
+        <li>
+          <img src="img/photo.jpg" width="500" height="500" alt="Alexandr Gordin photo">
+        </li>
+        <li>
+          <p>Alexandr Gordin</p>
+        </li>
+        <li>
+          <p>Date of birth: 09.08.1990</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <h2>Contacts</h2>
+      <ul class="telephone-list">
+        <li>
+          <p>(Velcom) 8-029-676-66-35</p>
+        </li>
+        <li>
+          <p>(MTS) 8-029-554-66-35</p>
+        </li>
+        <li>
+          <p>Skype: Jadgptw1</p>
+        </li>
+        <li>
+          <p>Email: Gordin.Alexander90@gmail.com</p>
+        </li>
+        <li>
+          <p>GitHub: <a href="https://github.com/Jadgptw">Jadgptw</a></p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="summary" id="summary">
+      <h2>Summary</h2>
+      <p>
+          SummarySummarySummarySummarySummarySummarySummarySummary
+          SummarySummarySummarySummarySummarySummarySummarySummary
+          SummarySummarySummarySummarySummarySummarySummarySummary
+          SummarySummarySummarySummarySummarySummarySummarySummary
+          SummarySummarySummarySummarySummarySummarySummarySummary
+      </p>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <table>
+        <th>Programming languages</th><th>Another skills</th>
+        <tr>
+          <td>C, C++</td>
+          <td>Git</td>
+        </tr>
+        <tr>
+          <td>Java / Spring</td>
+          <td>OOP</td>
+        </tr>
+        <tr>
+          <td>JavaScrypt</td>
+          <td>html, css</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="experience" id="experience">
+      <h2>Experience</h2>
+      <ul class="experience-list">
+        <li>
+          <p>Internet-Shop on Java (Servlets) in university</p>
+        </li>
+        <li>
+          <p>Library on Java (Servlets) in university</p>
+        </li>
+        <li>
+          <p>School diary on C++ in university</p>
+        </li>
+        <li>
+          <p>RS School Tasks on JS, level 1</p>
+        </li>
+        <li>
+          <p>Another university small tasks</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="code-example" id="code-example">
+      <h2>Code example</h2>
+      <code>
+        module.exports = function getZerosCount(number, base) { <br><br>
+          let result = [];<br>
+          let simpleDigits = findSimpleDigits(base).sort((a, b) => {return a - b});<br><br>
+          while(simpleDigits.length > 0){<br>
+            let simpleDigit = simpleDigits[simpleDigits.length - 1];<br>
+            let count = simpleDigits.slice(simpleDigits.indexOf(simpleDigit)).length;<br>
+            result.push(Math.floor(getMultiplicityCount(number, simpleDigit, 1, count)));<br>
+            simpleDigits.splice(simpleDigits.indexOf(simpleDigit));<br>
+          }<br>
+          return Math.min.apply(Math, result);<br>
+        }<br><br>
+        function getMultiplicityCount(number, simpleDigit, power, quantity) {<br>
+          let result = 0;<br>
+          let mult = Math.pow(simpleDigit, power);<br>
+          let count = Math.floor(number / mult);<br><br>
+          if(count > 0){<br>
+            result += count / quantity  + getMultiplicityCount(number, simpleDigit, power + 1, quantity);<br>
+          }<br>
+          return result;<br>
+        }<br><br>
+        function findSimpleDigits(number) {<br>
+          const simpleDigits = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37,  41, 43,<br>
+                                  47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101,<br>
+                                  103, 107, 109, 113, 127, 131, 137, 139, 149, 151,<br>
+                                  157, 163, 167, 173, 179, 181, 191, 193, 197, 199,<br>
+                                  211, 223, 227, 229, 233, 239, 241, 251];<br>
+                                  let result = [];<br><br>
+          while(simpleDigits.indexOf(number) < 0){<br>
+            for(var i = 0, len = simpleDigits.length; i < len; i++){<br>
+              if(!(number % simpleDigits[i])){<br>
+                result.push(simpleDigits[i]);<br>
+                break;<br>
+              }<br>
+            }<br>
+            number /= result[result.length - 1];<br>
+          }<br>
+          result.push(number);<br>
+          return result;<br>
+        }<br>
+      </code>
+      <b>You can see more examples on my github account: <a href="https://github.com/Jadgptw">Jadgptw</a></b>
+    </section>
 
 
+    <section class="education" id="education">
+      <h2>Education</h2>
+      <ul class="education-list">
+        <li>
+          <p>Belorussian National Tachnical University, 2013, engineer</p>
+        </li>
+        <li>
+          <p>Vilnius Gediminas Technical University, 2015, Master of Managment</p>
+        </li>
+        <li>
+          <p>Belarusian State University of Informatics and Radioelectronics, 2020, programming engineer</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="english" id="english">
+      <h2>English level</h2>
+      <b>English level - B1</b>
+      <p>I studied in school with a deep learning of english. Recently, a have small practise in english -
+        only in journeys and reading some technical literature </p>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>Developed by Alexandr Gordin</p>
+  </footer>
 </body>
 </html>
