@@ -8,11 +8,6 @@ body {
     line-height: 24px;
     font-weight: 700;
     color: #000000;
-
-    background-color: #FFFFFF;
-    /*background-image: url("../img/rs_school.jpg");*/
-    background-position: top center;
-    background-repeat: no-repeat;
 }
 
 a {
@@ -52,13 +47,12 @@ input[type="radio"].visually-hidden {
     border: 1px dashed #C0C0C0;
 }
 
-.resume-list {
-    margin: 0;
-    padding: 0;
-
+.resume-navigation-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
 
     font-size: 16px;
     color: #ffffff;
@@ -68,7 +62,7 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
-.resume-list a{
+.resume-navigation-list a{
     display: block;
     padding: 10px 10px;
 
@@ -76,12 +70,12 @@ input[type="radio"].visually-hidden {
     color: #000000;
 }
 
-.resume-list a:hover,
-.resume-list a:focus{
+.resume-navigation-list a:hover,
+.resume-navigation-list a:focus{
     background-color: #F0F0F0;
 }
 
-.container{
+.main-container{
     width: 750px;
     margin: 0 auto;
     padding: 0;
@@ -90,7 +84,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-.information-wrapper{
+.idential-block-wrapper{
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
@@ -98,37 +92,40 @@ input[type="radio"].visually-hidden {
     border-bottom: 1px dashed #C0C0C0;
 }
 
-.information-wrapper ul{
+.idential-block-wrapper ul{
     margin: 0;
     padding: 0;
 
     list-style: none;
 }
 
-.block{
+.idential-block{
     width: 50%;
     padding: 0 10px;
-
 }
 
-.block-left{
+.idential-block-left{
     border-right: 1px dashed #C0C0C0;
 }
 
-.block h2{
+.idential-block h2{
     margin: 0;
     margin-bottom: 15px;
 
     text-align: center;
 }
 
-.personal-wrapper{
+.personal-information-wrapper{
     display: flex;
     justify-content: space-between;
-
 }
 
-.personal-wrapper ul{
+.personal-information-wrapper img{
+    width: 150px;
+    height: 250px;
+}
+
+.personal-information-wrapper ul{
     width: 50%;
     padding-left: 10px;
 }
@@ -149,8 +146,57 @@ input[type="radio"].visually-hidden {
     text-align: center;
 }
 
+.skills table{
+    width: 300px;
+
+    text-align: center;
+
+    border: 1px dotted #C0C0C0;
+    border-collapse: collapse;
+}
+
+.skills th,
+.skills tr,
+.skills td{
+    padding: 10px;
+
+    border: 1px dotted #C0C0C0;
+}
+
+.code-example{
+    padding: 10px 10px;
+}
+
+.code-example h2{
+    margin: 0;
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
 .code-example code{
     font-size: 12px;
+}
+
+.code-example b{
+    display: block;
+    margin-top: 10px;
+    padding-right: 10px;
+
+    text-align: right;
+    font-size: 16px;
+}
+
+.main-footer{
+    width: 750px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 0;
+
+    text-align: center;
+    font-size: 16px;
+
+    border: 1px dashed #C0C0C0;
 }
 
 
