@@ -3,148 +3,173 @@
 <head>
   <meta charset="utf-8">
   <title>Resume</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <div class="main-navigation-wrapper">
-        <div class="container">
-          <ul class="resume-navigation">
-            <li>
-              <a class="main-logo">
-                <img src="img/resume.jpg" width="300" height="150" alt="Resume's logotype">
-              </a>
-            </li>
-            <li>
-              <a href="#personal">Personal information</a>
-            </li>
-            <li>
-              <a href="#contacts">Contacts</a>
-            </li>
-            <li>
-              <a href="#summary">Summary</a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-            <li>
-              <a href="#experience">Experience</a>
-            </li>
-            <li>
-              <a href="#code-example">Code example</a>
-            </li>
-            <li>
-              <a href="#education">Education</a>
-            </li>
-            <li>
-              <a href="#english">English level</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <ul class="resume-navigation-list">
+        <li>
+          <a href="#personal">Personal information</a>
+        </li>
+        <li>
+          <a href="#contacts">Contacts</a>
+        </li>
+        <li>
+          <a href="#summary">Summary</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#english">English level</a>
+        </li>
+        <li>
+          <a href="#code-example">Code example</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
-  <main class="container">
+  <main class="main-container">
       <h1 class="visually-hidden">Resume Page</h1>
 
-    <section class="personal" id="personal">
-      <h2>Personal information</h2>
-      <ul class="personal-information-list">
-        <li>
-          <img src="img/photo.jpg" width="500" height="500" alt="Alexandr Gordin photo">
-        </li>
-        <li>
-          <p>Alexandr Gordin</p>
-        </li>
-        <li>
-          <p>Date of birth: 09.08.1990</p>
-        </li>
-      </ul>
-    </section>
+    <div class="idential-block-wrapper">
+      <section class="personal idential-block idential-block-left" id="personal">
+        <h2>Personal information</h2>
+        <div class="personal-information-wrapper">
+          <img src="img/photo.jpg" width="150" height="250" alt="Alexandr Gordin photo">
+          <ul class="personal-information-list">
+            <li>
+              <p>Alexandr Gordin</p>
+            </li>
+            <li>
+              <p>Date of birth: 09.08.1990</p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <section class="contacts" id="contacts">
-      <h2>Contacts</h2>
-      <ul class="telephone-list">
-        <li>
-          <p>(Velcom) 8-029-676-66-35</p>
-        </li>
-        <li>
-          <p>(MTS) 8-029-554-66-35</p>
-        </li>
-        <li>
-          <p>Skype: Jadgptw1</p>
-        </li>
-        <li>
-          <p>Email: Gordin.Alexander90@gmail.com</p>
-        </li>
-        <li>
-          <p>GitHub: <a href="https://github.com/Jadgptw">Jadgptw</a></p>
-        </li>
-      </ul>
-    </section>
+      <section class="contacts idential-block" id="contacts">
+        <h2>Contacts</h2>
+        <ul class="telephone-list">
+          <li>
+            <p>(Velcom) 8-029-676-66-35</p>
+          </li>
+          <li>
+            <p>(MTS) 8-029-554-66-35</p>
+          </li>
+          <li>
+            <p>Skype: Jadgptw1</p>
+          </li>
+          <li>
+            <p>Email: Gordin.Alexander90@gmail.com</p>
+          </li>
+          <li>
+            <p>GitHub: <a href="https://github.com/Jadgptw">Jadgptw</a></p>
+          </li>
+        </ul>
+      </section>
+    </div>
 
     <section class="summary" id="summary">
       <h2>Summary</h2>
       <p>
-          SummarySummarySummarySummarySummarySummarySummarySummary
-          SummarySummarySummarySummarySummarySummarySummarySummary
-          SummarySummarySummarySummarySummarySummarySummarySummary
-          SummarySummarySummarySummarySummarySummarySummarySummary
-          SummarySummarySummarySummarySummarySummarySummarySummary
+          I love to study, to learn something new, so I want to work in a fast-growing industry
+          that gives an opportunity to grow as a professional.<br>It is very interesting to
+          communicate with people all over the world.
       </p>
     </section>
 
-    <section class="skills" id="skills">
-      <h2>Skills</h2>
-      <table>
-        <th>Programming languages</th><th>Another skills</th>
-        <tr>
-          <td>C, C++</td>
-          <td>Git</td>
-        </tr>
-        <tr>
-          <td>Java / Spring</td>
-          <td>OOP</td>
-        </tr>
-        <tr>
-          <td>JavaScrypt</td>
-          <td>html, css</td>
-        </tr>
-      </table>
-    </section>
+    <div class="idential-block-wrapper">
+      <section class="skills idential-block idential-block-left" id="skills">
+        <h2>Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Programming languages</th>
+              <th>Another skills</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>C, C++</td>
+              <td>Git</td>
+            </tr>
+            <tr>
+              <td>Java / Spring</td>
+              <td>OOP</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>HTML, CSS</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <section class="experience" id="experience">
-      <h2>Experience</h2>
-      <ul class="experience-list">
-        <li>
-          <p>Internet-Shop on Java (Servlets) in university</p>
-        </li>
-        <li>
-          <p>Library on Java (Servlets) in university</p>
-        </li>
-        <li>
-          <p>School diary on C++ in university</p>
-        </li>
-        <li>
-          <p>RS School Tasks on JS, level 1</p>
-        </li>
-        <li>
-          <p>Another university small tasks</p>
-        </li>
-      </ul>
-    </section>
+      <section class="experience idential-block" id="experience">
+        <h2>Experience</h2>
+        <ul class="experience-list">
+          <li>
+            <p>Internet-Shop on Java (Servlets) in university;</p>
+          </li>
+          <li>
+            <p>Library on Java (Servlets) in university;</p>
+          </li>
+          <li>
+            <p>School diary on C++ in university;</p>
+          </li>
+          <li>
+            <p>RS School Tasks on JS, level 1;</p>
+          </li>
+          <li>
+            <p>Another university small tasks.</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="idential-block-wrapper">
+      <section class="education idential-block idential-block-left" id="education">
+        <h2>Education</h2>
+        <ul class="education-list">
+          <li>
+            <p>BNTU, 2013, civil engineer</p>
+          </li>
+          <li>
+            <p>VGTU (Lithuania), 2015, Master of Managment</p>
+          </li>
+          <li>
+            <p>BSUIR, 2020, programming engineer</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="english idential-block" id="english">
+        <h2>English</h2>
+        <b>English level - B1</b>
+        <p>Studied in school with a deep learning of english.<br> Recently, I have no enough practise in english -<br>
+          only in journeys and reading some technical literature</p>
+      </section>
+    </div>
 
     <section class="code-example" id="code-example">
       <h2>Code example</h2>
       <code>
         module.exports = function getZerosCount(number, base) { <br><br>
           let result = [];<br>
-          let simpleDigits = findSimpleDigits(base).sort((a, b) => {return a - b});<br><br>
-          while(simpleDigits.length > 0){<br>
+          let simpleDigits = findSimpleDigits(base).sort((a, b) =&gt; {return a - b});<br><br>
+          while(simpleDigits.length &gt; 0){<br>
             let simpleDigit = simpleDigits[simpleDigits.length - 1];<br>
-            let count = simpleDigits.slice(simpleDigits.indexOf(simpleDigit)).length;<br>
+            const count = simpleDigits.slice(simpleDigits.indexOf(simpleDigit)).length;<br>
             result.push(Math.floor(getMultiplicityCount(number, simpleDigit, 1, count)));<br>
             simpleDigits.splice(simpleDigits.indexOf(simpleDigit));<br>
           }<br>
@@ -152,9 +177,9 @@
         }<br><br>
         function getMultiplicityCount(number, simpleDigit, power, quantity) {<br>
           let result = 0;<br>
-          let mult = Math.pow(simpleDigit, power);<br>
-          let count = Math.floor(number / mult);<br><br>
-          if(count > 0){<br>
+          const mult = Math.pow(simpleDigit, power);<br>
+          const count = Math.floor(number / mult);<br><br>
+          if(count &gt; 0){<br>
             result += count / quantity  + getMultiplicityCount(number, simpleDigit, power + 1, quantity);<br>
           }<br>
           return result;<br>
@@ -166,8 +191,8 @@
                                   157, 163, 167, 173, 179, 181, 191, 193, 197, 199,<br>
                                   211, 223, 227, 229, 233, 239, 241, 251];<br>
                                   let result = [];<br><br>
-          while(simpleDigits.indexOf(number) < 0){<br>
-            for(var i = 0, len = simpleDigits.length; i < len; i++){<br>
+          while(simpleDigits.indexOf(number) &lt; 0){<br>
+            for(let i = 0, len = simpleDigits.length; i &lt; len; i++){<br>
               if(!(number % simpleDigits[i])){<br>
                 result.push(simpleDigits[i]);<br>
                 break;<br>
@@ -179,32 +204,11 @@
           return result;<br>
         }<br>
       </code>
-      <b>You can see more examples on my github account: <a href="https://github.com/Jadgptw">Jadgptw</a></b>
+      <b>You can see more code examples on my github account: <a href="https://github.com/Jadgptw">Jadgptw</a></b>
     </section>
 
-
-    <section class="education" id="education">
-      <h2>Education</h2>
-      <ul class="education-list">
-        <li>
-          <p>Belorussian National Tachnical University, 2013, engineer</p>
-        </li>
-        <li>
-          <p>Vilnius Gediminas Technical University, 2015, Master of Managment</p>
-        </li>
-        <li>
-          <p>Belarusian State University of Informatics and Radioelectronics, 2020, programming engineer</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="english" id="english">
-      <h2>English level</h2>
-      <b>English level - B1</b>
-      <p>I studied in school with a deep learning of english. Recently, a have small practise in english -
-        only in journeys and reading some technical literature </p>
-    </section>
   </main>
+
 
   <footer class="main-footer">
     <p>Developed by Alexandr Gordin</p>
